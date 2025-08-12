@@ -1,27 +1,40 @@
 // data/gallery.ts
 export const galleryImages = [
   {
-    src: "/images/gallery-1.jpg",
-    alt: "Pintura de um carro preto após polimento técnico",
+    src: "/images/gallery/higienizacao-interna.jpeg",
+    alt: "Higienização interna de um carro com bancos de couro limpos e hidratados",
   },
   {
-    src: "/images/gallery-2.jpg",
-    alt: "Interior de um veículo com bancos de couro limpos e hidratados",
+    src: "/images/gallery/higienizacao-interna3.jpeg",
+    alt: "Limpeza e higienização completa do carro, incluindo lataria e interior",
   },
   {
-    src: "/images/gallery-3.jpg",
-    alt: "Roda esportiva preta limpa e detalhada",
+    src: "/images/gallery/higienizacao-interna4.jpeg",
+    alt: "Resultado da Limpeza e higienização completa do carro, incluindo lataria e interior",
   },
   {
-    src: "/images/gallery-4.jpg",
-    alt: "Close-up do capô de um carro vermelho mostrando o reflexo perfeito após cristalização",
+    src: "/images/gallery/lavagem_detalhada.jpeg",
+    alt: "Lavagem detalhada de uma moto",
   },
   {
-    src: "/images/gallery-5.jpg",
-    alt: "Farol de um carro antes e depois do processo de polimento e restauração",
+    src: "/images/gallery/lavagem_detalhada2.jpeg",
+    alt: "Lavagem detalhada de uma moto",
   },
   {
-    src: "/images/gallery-6.jpg",
-    alt: "Motor de um carro detalhado e limpo, parecendo novo",
+    src: "/images/gallery/lavagem_detalhada3.jpeg",
+    alt: "Lavagem detalhada de uma Range Rover",
   },
+    {
+    src: "/images/gallery/lavagem_manutenção.jpeg",
+    alt: "Lavagem de manutenção",
+  },
+  {
+    src: "/images/gallery/polimento-tanque.jpeg",
+    alt: "Polimento do tanque de uma moto fan 160",
+  },
+    {
+    src: "/images/gallery/polimento-tanque2.jpeg",
+    alt: "Resultado do polimento do tanque de uma moto fan 160",
+  },
+  
 ];

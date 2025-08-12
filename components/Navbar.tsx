@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link'; // Componente do Next.js para navegação otimizada
+import Image from 'next/image';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,10 +20,22 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           
-          {/* Logo/Nome da Empresa */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-white text-2xl font-bold tracking-wider">
-              Estética SF <span>Santos</span>
+            {/* A tag Link agora é um container flexível para alinhar a imagem e o texto */}
+            <Link href="/" className="flex items-center gap-3">
+            
+              <Image
+                src="/images/logo2.png" // O caminho para o seu logo na pasta public
+                alt="Logo da Estética SF Santos"
+                width={75} // Largura do seu logo
+                height={50} // Altura do seu logo
+                priority // Ajuda a carregar o logo mais rápido
+              />
+
+              {/* As classes de estilo do texto agora estão aqui */}
+              <p className="text-white text-2xl font-bold tracking-wider">
+                Estética SF <span>Santos</span>
+              </p>
             </Link>
           </div>
 
