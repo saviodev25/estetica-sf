@@ -7,10 +7,10 @@ export const services = [
     features: ["Remove hologramas e marcas de lavagem", "Aumenta a profundidade da cor", "Prepara a pintura para vitrificação"]
   },
   {
-    title: "Vitrificação de Pintura (Coating Cerâmico)",
-    description: "Aplicação de um composto de alta tecnologia que cria uma camada de proteção rígida sobre o verniz.",
-    imageUrl: "/images/vitrificacao.jpeg",
-    features: ["Proteção contra raios UV e dejetos", "Efeito super hidrofóbico (repele água e sujeira)", "Durabilidade de 1 a 3 anos"]
+    title: "Lavagem de Manutenção",
+    description: "Limpeza completa do exterior do veículo, incluindo lavagem, desengorduramento e secagem.",
+    imageUrl: "/images/Lavagem.jpg",
+    features: ["Remoção de sujeira e contaminantes", "Aplicação de cera para proteção", "Secagem com toalhas de microfibra"]
   },
   {
     title: "Higienização Interna Completa",

@@ -12,7 +12,7 @@ export default function Footer() {
           {/* Coluna 1: Logo e Descrição */}
           <div className="space-y-4">
             <h2 className="text-white text-2xl font-bold tracking-wider">
-              Estética SF <span className="text-emerald-400">Santos</span>
+              Estética SF Santos
             </h2>
             <p className="text-sm">
               Especialistas em detalhamento e cuidado automotivo. Transformamos seu carro em uma obra de arte.
