@@ -14,11 +14,11 @@ export const galleryImages = [
   },
   {
     src: "/images/gallery/lavagem_detalhada.jpeg",
-    alt: "Lavagem detalhada de uma moto",
+    alt: "Lavagem detalhada de uma Brós",
   },
   {
     src: "/images/gallery/lavagem_detalhada2.jpeg",
-    alt: "Lavagem detalhada de uma moto",
+    alt: "Lavagem detalhada de uma Brós",
   },
   {
     src: "/images/gallery/lavagem_detalhada3.jpeg",

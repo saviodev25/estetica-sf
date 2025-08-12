@@ -24,6 +24,7 @@ export default function GallerySection() {
                   alt={image.alt}
                   className="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out"
                 />
+                <p className="text-sm m-1">{image.alt}</p>
               </div>
             </div>
           ))}
