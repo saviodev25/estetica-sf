@@ -6,7 +6,7 @@ interface ServiceCardProps {
 }
 
 export default function ServiceCard({ title, description, imageUrl, features }: ServiceCardProps) {
-  const whatsappNumber = " 77997008905"; 
+  const whatsappNumber = "5577997008905"; 
 
   const message = `Olá! Tenho interesse no serviço de "${title}" e gostaria de fazer um orçamento.`;
 
@@ -22,6 +22,7 @@ export default function ServiceCard({ title, description, imageUrl, features }: 
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-2xl font-bold text-white mb-2">{title}</h3>
         <p className="text-gray-300 mb-4 flex-grow">{description}</p>
+        
         
         <ul className="space-y-2 mb-6">
           {features.map((feature, index) => (
