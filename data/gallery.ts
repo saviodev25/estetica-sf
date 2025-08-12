@@ -14,11 +14,11 @@ export const galleryImages = [
   },
   {
     src: "/images/gallery/lavagem_detalhada.jpeg",
-    alt: "Lavagem detalhada de uma Brós",
+    alt: "Lavagem detalhada de uma Brós 160",
   },
   {
     src: "/images/gallery/lavagem_detalhada2.jpeg",
-    alt: "Lavagem detalhada de uma Brós",
+    alt: "Lavagem detalhada de uma Sahara 300",
   },
   {
     src: "/images/gallery/lavagem_detalhada3.jpeg",
@@ -30,11 +30,11 @@ export const galleryImages = [
   },
   {
     src: "/images/gallery/polimento-tanque.jpeg",
-    alt: "Polimento do tanque de uma moto fan 160",
+    alt: "Polimento do tanque de uma fan 160",
   },
     {
     src: "/images/gallery/polimento-tanque2.jpeg",
-    alt: "Resultado do polimento do tanque de uma moto fan 160",
+    alt: "Resultado do polimento do tanque de uma fan 160",
   },
   
 ];
