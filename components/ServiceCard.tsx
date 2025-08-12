@@ -1,0 +1,49 @@
+interface ServiceCardProps {
+  title: string;
+  description: string;
+  imageUrl: string;
+  features: string[];
+}
+
+export default function ServiceCard({ title, description, imageUrl, features }: ServiceCardProps) {
+  const whatsappNumber = " 77997008905"; 
+
+  const message = `Olá! Tenho interesse no serviço de "${title}" e gostaria de fazer um orçamento.`;
+
+  // 3. Crie o link completo para o WhatsApp.
+  // A função encodeURIComponent é ESSENCIAL para garantir que espaços e acentos
+  // na mensagem funcionem corretamente na URL.
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+  return (
+    <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg overflow-hidden shadow-lg flex flex-col">
+      <img className="w-full h-56 object-cover" src={imageUrl} alt={`Serviço de ${title}`} />
+      
+      <div className="p-6 flex flex-col flex-grow">
+        <h3 className="text-2xl font-bold text-white mb-2">{title}</h3>
+        <p className="text-gray-300 mb-4 flex-grow">{description}</p>
+        
+        <ul className="space-y-2 mb-6">
+          {features.map((feature, index) => (
+            <li key={index} className="flex items-center text-gray-400">
+              <svg className="w-4 h-4 mr-2 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+              {feature}
+            </li>
+          ))}
+        </ul>
+        <a 
+          href={whatsappLink}
+          target="_blank" // Abre o link em uma nova aba, não fecha o site
+          rel="noopener noreferrer" // Medida de segurança para links `target="_blank"`
+          className="mt-auto block w-full text-center bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2"
+        >
+          {/* Ícone do WhatsApp (SVG) */}
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+          </svg>
+          Pedir Orçamento
+        </a>
+      </div>
+    </div>
+  );
+}
